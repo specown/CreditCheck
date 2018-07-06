@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+
+@section Scripts 
+{
+    <script src="~/Scripts/jquery-1.7.1.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+}
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="keywords" content="Credit, Check, Credit Check, Pre-Qualification, Test, Experian, Thanks For Looking" />
+
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+    <link rel="stylesheet" href=@Url.Content("Content/css/style.css")>
+
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+
+    <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+
+</head>
+<body>
+    <h1>Pre-Qualification tool for Credit Cards</h1>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <div class="footer">
+        <p> Copyright 2018, Lukas Aleksa </p>
+    </div>
+
+</body>
+</html>

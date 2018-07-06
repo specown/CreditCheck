@@ -1,0 +1,50 @@
+﻿@model CreditCheck.Models.CreditFormModel
+@{
+    ViewBag.Title = "index";
+    Layout = "~/Views/Shared/_mainLayout.cshtml";
+}
+
+@using (Html.BeginForm())
+{
+    <div class="agile-its">
+
+        <h2>Enter you details here:</h2>
+
+        <div class="mainlayouts">
+
+            <div class="agileinfo-row">
+
+                <div class="ferry ferry-from">
+                    @Html.Label("First Name")
+                    @Html.TextBoxFor(model => model.fname)
+                    @Html.ValidationMessageFor(model => model.fname)<br />
+                <br /></div>
+
+                <div class="ferry ferry-from">
+                    @Html.Label("Last Name")
+                    @Html.TextBoxFor(model => model.lname)
+                    @Html.ValidationMessageFor(model => model.lname)<br />
+                <br /></div>
+
+                <div class="ferry ferry-from">
+                    @Html.Label("Annual Income")
+                    @Html.TextBoxFor(model => model.income)
+                    @Html.ValidationMessageFor(model => model.income)<br />
+                <br /></div>
+
+                <div class="ferry ferry-from">
+                    @Html.Label("Date of Birth (dd/mm/yyyy)")
+                    @Html.TextBoxFor(model => model.dob)
+                    @Html.ValidationMessageFor(model => model.dob)<br />
+                <br /></div>
+
+                <div class="submitbutton">
+                    <input type="submit" name="submit" value="Submit">
+                </div>
+
+                <div class="clear"> </div>
+
+            </div>
+        </div>
+    </div>
+}
